@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# PyConZA specific ignores
+node_modules/
+static/vendor/
