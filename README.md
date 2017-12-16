@@ -8,4 +8,6 @@ Based on [wafer](https://github.com/CTPUG/wafer).
 1. Create a `localsettings.py` containing secrets and database credentials.
 1. Run `npm install`.
 1. Run `./manage.py migrate`.
+1. Run `./manage.py createcachetable wafer_cache_table`.
+1. Run `./manage.py collectstatic`.
 1. Run `./manage.py runserver`.
