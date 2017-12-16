@@ -1,0 +1,5 @@
+wafer >= 0.5.7
+psycopg2
+mdx_outline
+mdx_attr_cols
+mdx_variables
