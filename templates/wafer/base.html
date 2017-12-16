@@ -1,0 +1,37 @@
+{% load sponsors %}
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ WAFER_CONFERENCE_NAME }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'vendor/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/wafer.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'css/pyconza2018.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'img/favicon.ico' %}" rel="shortcut icon">
+    <link href="//fonts.googleapis.com/css?family=Alegreya|Pacifico|Oswald|PT+Sans|Source+Sans+Pro" rel="stylesheet" type="text/css">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include "wafer/nav.html" %}
+    <div id="wrap">
+        <div id="main" class="container">
+{% block content %}
+    <h1>{{ WAFER_CONFERENCE_NAME }}</h1>
+{% endblock %}
+          <br clear="all">
+        </div>
+        <div id="logos" class="container">
+        </div>
+        <div id="legal" class="container">&copy; 2018 PyConZA.</div>
+        <div id="logo_bottom"><img src="{{ STATIC_URL }}img/logo_bottom.png" /></div>
+    </div>
+    <script src="{% static 'vendor/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/tether/dist/js/tether.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    {% block extra_foot %}{% endblock %}
+</body>
+</html>
