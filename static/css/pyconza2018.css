@@ -1,0 +1,339 @@
+body {
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+}
+
+#wrap {
+  min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
+  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.png'), #fff;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-position: bottom center, top center, 0 0, 0 0;
+}
+
+#main {
+  color: white;
+  padding-top: 1em;
+}
+
+#main .popover-content,
+#main .popover-title {
+  color: black;
+}
+
+#main .form-actions {
+  background: inherit;
+  border: none;
+  padding: 0px;
+}
+
+#main .well {
+  color: black;
+}
+
+#main .well:after {
+  /* ensure wells contain all their floating content */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main h1 {
+  margin: 0;
+  padding: 0 24px;
+  line-height: 47px;
+  background: #191919;
+  font-family: 'Alegreya';
+  font-size: 30px;
+  font-weight: bold;
+  color: #f15025;
+}
+
+#main section {
+  width: 100%;
+  float: left;
+  padding: 0 10px 10px 10px;
+  color: black;
+  background: #fff;
+  margin-bottom: 1em;
+  background: white;
+}
+
+#main section section {
+  background: #eee;
+}
+
+#main section h1,
+#main section section h2 {
+  margin: 10px 0 0;
+  padding: 0 24px;
+  line-height: 47px;
+  background: #191919;
+  font-family: 'Alegreya';
+  font-size: 30px;
+  font-weight: bold;
+  color: #f15025;
+  margin-bottom: 0.5em;
+}
+
+#main section p {
+  padding-left: 12px;
+}
+
+#main li p {
+  padding-left: 0;
+}
+
+#main table {
+  width: 100%;
+}
+
+#main table tr {
+  border-bottom: 2px solid #fff;
+}
+
+#main table th,
+table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-right: 2px solid #fff;
+  background: #ced0ce;
+  font-size: 16px;
+  color: #191919;
+}
+
+#main table td.title {
+  background: #939493;
+  font-family: 'Alegreya';
+  font-size: 16px;
+  color: #191919;
+  line-height: 26px;
+}
+
+#main table th {
+  font-family: 'Alegreya';
+  background: #f15025;
+  color: #191919;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+/* Make links on the table header visbile */
+#main table th a {
+  color: #191919;
+}
+
+#main table th span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #191919;
+  line-height: 26px;
+}
+
+#logos {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#logos img {
+  padding: 10px 20px;
+}
+
+#legal {
+  text-align: center;
+  font-family: 'Alegreya';
+  font-size: 30px;
+  color: #ced0ce;
+  padding-bottom: 15px;
+}
+
+#credits {
+  text-align: center;
+  font-family: 'Alegreya';
+  font-size: 20px;
+  color: white;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+#credits a {
+  color: #f15025;
+}
+
+/* Schedule highlight colours:
+ Blue-ish: #BDD6EC
+ Pink-ish: #EBBDEC
+ Redbrown-ish: #ECD3BD
+ Green-ish: #BFECBD
+ */
+
+/* Highlights */
+#main table td.schedule-break {
+  background: #bdd6ec;
+}
+
+#main table td.schedule-keynote {
+  background: #ebbdec;
+}
+
+/* Use a darker background for unavailable venues in the schedule */
+#main table td.unavailable {
+  background: #444444;
+  font-size: 16px;
+  color: #191919;
+  line-height: 26px;
+}
+
+#logo_bottom {
+  /* this padding needs to be big enough to avoid clouds_bottom.png covering text. */
+  padding-bottom: 199px;
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  background: #000;
+  color: white;
+  width: 100%;
+  clear: both;
+  padding: 10px 0px;
+  text-align: center;
+  z-index: 100;
+}
+
+.wafer-speakers .wafer-speakers-logo img {
+  border-radius: 50%;
+  border: 10px dotted;
+  padding: 10px;
+}
+
+.wafer-speakers .wafer-speakers-logo {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.wafer-speakers .wafer-speakers-name {
+  text-align: center;
+  margin-bottom: 1.0em;
+}
+
+.wafer-profile #profile-avatar {
+  text-align center;
+  margin-top: 15px;
+}
+
+.wafer-profile #profile-avatar img {
+  border-radius: 50%;
+  border: 10px dotted;
+  padding: 10px;
+}
+
+.wafer.list div:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.wafer.list div:nth-child(2n + 1) {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+/* fix icons on top nav bar */
+ul.navbar-nav li.icon a {
+  padding: 12px;
+}
+
+/* override buttons */
+.btn-primary {
+  background-color: #f15025;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #9a3318;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #ced0ce;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  color: #939493;
+}
+
+a {
+  color: #f15025;
+}
+
+a:hover,
+a:focus {
+  color: #f15025;
+}
+
+/* NAV */
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav .nav-link {
+  background-color: #191919;
+  color: #fff;
+  padding: 10px;
+  margin: 0px;
+  line-height: 30px;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav .nav-link:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav .nav-link:focus {
+  color: #f15025;
+}
+
+.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle .caret,
+.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: #191919;
+  background-color: #f15025;
+  background-image: linear-gradient(to left, #f15025, #ced0ce);
+}
+
+.container-fluid {
+  padding-top: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #191919 ! important;
+  font-family: 'Source Sans Pro', 'sans serif';
+}
+
+.pull-right {
+  margin: 0;
+}
+
+.profile-links {
+  padding: 6px;
+}
+
+@media only screen and (max-device-width:768px) {
+  #footer {
+    position: static;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+
+}
