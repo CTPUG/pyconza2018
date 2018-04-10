@@ -5,13 +5,13 @@ body {
 
 #wrap {
   min-height: 100%;  /* put the background behind the clouds -- see CLOUDS further down */
-  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.png'), #fff;
+  background: url('../img/clouds_bottom.png'), url('../img/clouds_top.png'), url('../img/pattern.png'), #fcfffc;
   background-repeat: no-repeat, no-repeat, repeat, repeat;
   background-position: bottom center, top center, 0 0, 0 0;
 }
 
 #main {
-  color: white;
+  color: #fcfffc;
   padding-top: 1em;
 }
 
@@ -41,11 +41,11 @@ body {
   margin: 0;
   padding: 0 24px;
   line-height: 47px;
-  background: #191919;
+  background: #040f0f;
   font-family: 'Alegreya';
   font-size: 30px;
   font-weight: bold;
-  color: #f15025;
+  color: #ff8c28;
 }
 
 #main section {
@@ -53,9 +53,9 @@ body {
   float: left;
   padding: 0 10px 10px 10px;
   color: black;
-  background: #fff;
+  background: #fcfffc;
   margin-bottom: 1em;
-  background: white;
+  background: #fcfffc;
 }
 
 #main section section {
@@ -67,11 +67,11 @@ body {
   margin: 10px 0 0;
   padding: 0 24px;
   line-height: 47px;
-  background: #191919;
+  background: #040f0f;
   font-family: 'Alegreya';
   font-size: 30px;
   font-weight: bold;
-  color: #f15025;
+  color: #ff8c28;
   margin-bottom: 0.5em;
 }
 
@@ -88,44 +88,44 @@ body {
 }
 
 #main table tr {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fcfffc;
 }
 
 #main table th,
 table td {
   padding: 8px 12px;
   text-align: left;
-  border-right: 2px solid #fff;
-  background: #ced0ce;
+  border-right: 2px solid #fcfffc;
+  background: #ffa04f;
   font-size: 16px;
-  color: #191919;
+  color: #040f0f;
 }
 
 #main table td.title {
-  background: #939493;
+  background: #2d3a3a;
   font-family: 'Alegreya';
   font-size: 16px;
-  color: #191919;
+  color: #040f0f;
   line-height: 26px;
 }
 
 #main table th {
   font-family: 'Alegreya';
-  background: #f15025;
-  color: #191919;
+  background: #ff8c28;
+  color: #040f0f;
   font-weight: normal;
   vertical-align: top;
 }
 
 /* Make links on the table header visbile */
 #main table th a {
-  color: #191919;
+  color: #040f0f;
 }
 
 #main table th span {
   font-size: 16px;
   font-weight: bold;
-  color: #191919;
+  color: #040f0f;
   line-height: 26px;
 }
 
@@ -144,7 +144,7 @@ table td {
   text-align: center;
   font-family: 'Alegreya';
   font-size: 30px;
-  color: #ced0ce;
+  color: #ffa04f;
   padding-bottom: 15px;
 }
 
@@ -152,13 +152,13 @@ table td {
   text-align: center;
   font-family: 'Alegreya';
   font-size: 20px;
-  color: white;
+  color: #fcfffc;
   line-height: 22px;
   padding-bottom: 20px;
 }
 
 #credits a {
-  color: #f15025;
+  color: #ff8c28;
 }
 
 /* Schedule highlight colours:
@@ -181,7 +181,7 @@ table td {
 #main table td.unavailable {
   background: #444444;
   font-size: 16px;
-  color: #191919;
+  color: #040f0f;
   line-height: 26px;
 }
 
@@ -195,7 +195,7 @@ table td {
   position: fixed;
   bottom: 0;
   background: #000;
-  color: white;
+  color: #fcfffc;
   width: 100%;
   clear: both;
   padding: 10px 0px;
@@ -247,9 +247,9 @@ ul.navbar-nav li.icon a {
 
 /* override buttons */
 .btn-primary {
-  background-color: #f15025;
+  background-color: #ff8c28;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: white;
+  color: #fcfffc;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -259,30 +259,30 @@ ul.navbar-nav li.icon a {
 .btn-primary.active {
   background-color: #9a3318;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: white;
+  color: #fcfffc;
 }
 
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #ced0ce;
+  background-color: #ffa04f;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  color: #939493;
+  color: #2d3a3a;
 }
 
 a {
-  color: #f15025;
+  color: #ff8c28;
 }
 
 a:hover,
 a:focus {
-  color: #f15025;
+  color: #ff8c28;
 }
 
 /* NAV */
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav .nav-link {
-  background-color: #191919;
-  color: #fff;
+  background-color: #040f0f;
+  color: #fcfffc;
   padding: 10px;
   margin: 0px;
   line-height: 30px;
@@ -292,7 +292,7 @@ a:focus {
 .navbar-inverse .navbar-nav .nav-link:hover,
 .navbar-inverse .navbar-brand:focus,
 .navbar-inverse .navbar-nav .nav-link:focus {
-  color: #f15025;
+  color: #ff8c28;
 }
 
 .navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle .caret,
@@ -304,9 +304,9 @@ a:focus {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: #191919;
-  background-color: #f15025;
-  background-image: linear-gradient(to left, #f15025, #ced0ce);
+  color: #040f0f;
+  background-color: #ff8c28;
+  background-image: linear-gradient(to left, #ff8c28, #ffa04f);
 }
 
 .container-fluid {
@@ -315,7 +315,7 @@ a:focus {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #191919 ! important;
+  background-color: #040f0f ! important;
   font-family: 'Source Sans Pro', 'sans serif';
 }
 
