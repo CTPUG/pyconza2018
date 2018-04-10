@@ -106,4 +106,4 @@ MARKITUP_FILTER = ('markdown.markdown', {
 # Use HTTPS jquery URL so it's accessible on HTTPS pages (e.g. editing a talk)
 JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'
 
-WAFER_TALKS_OPEN = False
+WAFER_TALKS_OPEN = True
