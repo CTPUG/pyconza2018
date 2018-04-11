@@ -96,7 +96,7 @@ table td {
   padding: 8px 12px;
   text-align: left;
   border-right: 2px solid #fcfffc;
-  background: #ffa04f;
+  background: #8cbd94;
   font-size: 16px;
   color: #040f0f;
 }
@@ -105,7 +105,7 @@ table td {
   background: #2d3a3a;
   font-family: 'Alegreya';
   font-size: 16px;
-  color: #040f0f;
+  color: #fcfffc;
   line-height: 26px;
 }
 
@@ -169,12 +169,17 @@ table td {
  */
 
 /* Highlights */
+
+#main table td.schedule {
+  background: #bdd9c1;
+}
+
 #main table td.schedule-break {
-  background: #bdd6ec;
+  background: #d8dbdb;
 }
 
 #main table td.schedule-keynote {
-  background: #ebbdec;
+  background: #ffc28f;
 }
 
 /* Use a darker background for unavailable venues in the schedule */
@@ -270,12 +275,12 @@ ul.navbar-nav li.icon a {
 }
 
 a {
-  color: #ff8c28;
+  color: #1e6b29;
 }
 
 a:hover,
 a:focus {
-  color: #ff8c28;
+  color: #248232;
 }
 
 /* NAV */
