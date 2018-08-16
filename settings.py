@@ -73,15 +73,15 @@ WAFER_MENUS += (
 )
 
 
-def tickets_sold():
+def tickets_sold(ticket_type_id):
     """ Return number of tickets sold. """
     from wafer.tickets.models import Ticket
-    return Ticket.objects.count()
+    return Ticket.objects.filter(type_id=ticket_type_id).count()
 
 
 def main_conference_tickets_sold():
     """ Return number of tickets sold for the main conference. """
-    TUTORIAL_TICKET_TYPES = [10, 11, 12]
+    TUTORIAL_TICKET_TYPES = [9, 10]
     from wafer.tickets.models import Ticket
     return Ticket.objects.exclude(type_id__in=TUTORIAL_TICKET_TYPES).count()
 
@@ -99,8 +99,9 @@ MARKITUP_FILTER = ('markdown.markdown', {
     'extension_configs': {
         'variables': {
             'vars': {
-                'tickets_sold': tickets_sold,
                 'main_conference_tickets_sold': main_conference_tickets_sold,
+                'tutorial_data_science_tickets_sold': lambda: tickets_sold(10),
+                'tutorial_hello_types_tickets_sold': lambda: tickets_sold(9),
             },
         },
     },
