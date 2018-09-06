@@ -81,7 +81,7 @@ def tickets_sold(ticket_type_ids):
 
 def main_conference_tickets_sold():
     """ Return number of tickets sold for the main conference. """
-    TUTORIAL_TICKET_TYPES = [9, 10, 13]
+    TUTORIAL_TICKET_TYPES = [9, 10, 13, 14]
     from wafer.tickets.models import Ticket
     return Ticket.objects.exclude(type_id__in=TUTORIAL_TICKET_TYPES).count()
 
@@ -102,6 +102,7 @@ MARKITUP_FILTER = ('markdown.markdown', {
                 'main_conference_tickets_sold': main_conference_tickets_sold,
                 'tutorial_data_science_tickets_sold': lambda: tickets_sold([10, 13]),
                 'tutorial_hello_types_tickets_sold': lambda: tickets_sold([9]),
+                'tutorial_geodjango_foss_gis': lambda: tickets_sold([14]),
             },
         },
     },
