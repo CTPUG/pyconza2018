@@ -233,6 +233,7 @@ table td {
   border-radius: 50%;
   border: 4px solid #ff8c28;
   padding: 10px;
+  margin-left: 10px;
 }
 
 .wafer.list div:nth-child(2n) {
