@@ -90,14 +90,14 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MARKITUP_FILTER = ('markdown.markdown', {
     'safe_mode': False,
     'extensions': [
-        'outline',
+        'mdx_outline',
         'attr_list',
-        'attr_cols',
+        'mdx_attr_cols',
         'markdown.extensions.tables',
-        'variables',
+        'mdx_variables',
     ],
     'extension_configs': {
-        'variables': {
+        'mdx_variables': {
             'vars': {
                 'main_conference_tickets_sold': main_conference_tickets_sold,
                 'tutorial_data_science_tickets_sold': lambda: tickets_sold([10, 13]),
