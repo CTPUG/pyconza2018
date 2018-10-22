@@ -285,8 +285,8 @@ a:focus {
 }
 
 /* NAV */
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav .nav-link {
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
   background-color: #040f0f;
   color: #fcfffc;
   padding: 10px;
@@ -294,15 +294,15 @@ a:focus {
   line-height: 30px;
 }
 
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-nav .nav-link:hover,
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-nav .nav-link:focus {
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-nav .nav-link:focus {
   color: #ff8c28;
 }
 
-.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle .caret,
-.navbar-inverse .navbar-nav li.dropdown > .dropdown-toggle::after {
+.navbar-dark .navbar-nav li.dropdown > .dropdown-toggle .caret,
+.navbar-dark .navbar-nav li.dropdown > .dropdown-toggle::after {
   display: none;
 }
 
